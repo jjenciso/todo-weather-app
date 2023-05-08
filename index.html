@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <h1 class="text-primary">Be Productive!</h1>
+        <div class="input-task-container">
+          <input
+            class="input-text"
+            type="text"
+            id="new-task-input"
+            placeholder="Work!!"
+          />
+          <button class="btn-primary" id="add-task">Add Task!</button>
+        </div>
+        <div class="list-container">
+          <div class="current-task">
+            <h3>My Tasks</h3>
+            <ul class="task-list" id="taskList"></ul>
+          </div>
+          <div class="completed-task">
+            <h3>Completed Tasks</h3>
+            <ul class="task-list" id="completedTaskList"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-container"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

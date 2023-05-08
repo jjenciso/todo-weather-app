@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.left-container {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    /* background-color: rgba(0, 0, 0, .4); */
+}
+
+.text-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    color: #454B1B;
+}
+
+.input-task-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.input-task-container input {
+    width: 13rem;
+    height: 2rem;
+    border: 1px solid #ccc0cc;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.btn-primary {
+    height: 2rem;
+    width: 5rem;
+    font-weight: bold;
+    border: 1px solid #6B6B6B;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    border: 2px solid #6B6B6B;
+}
+
+.list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.task-list {
+    margin-top: 10px;
+    padding: 0 5px;
+}
