@@ -19,28 +19,35 @@
   <body>
     <div class="main-container">
       <div class="left-container">
-        <h1 class="text-primary">Be Productive!</h1>
+        <h2 class="text-primary">What do you want to do today <span id="userName"></span></h2>
         <div class="input-task-container">
           <input
             class="input-text"
             type="text"
             id="new-task-input"
-            placeholder="Work!!"
+            placeholder="Add To do"
           />
           <button class="btn-primary" id="add-task">Add Task!</button>
         </div>
         <div class="list-container">
           <div class="current-task">
-            <h3>My Tasks</h3>
+            <h3>My To do list</h3>
             <ul class="task-list" id="taskList"></ul>
           </div>
           <div class="completed-task">
-            <h3>Completed Tasks</h3>
+            <h3>Completed To do's</h3>
             <ul class="task-list" id="completedTaskList"></ul>
           </div>
         </div>
       </div>
-      <div class="right-container"></div>
+      <div class="right-container">
+        <form>
+          <label for="city">Enter a city:</label>
+          <input type="text" id="city" name="city" class="input-text">
+          <button type="submit" class="btn-primary">Get weather</button>
+        </form>
+        <div class="weather-text" id="weather"></div>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>
